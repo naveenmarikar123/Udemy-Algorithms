@@ -11,6 +11,7 @@ public class CycleDetection {
 			if(!vertex.isVisited())
 			{
 				vertex.setVisited(true);
+				System.out.println("HERE");
 				dfs(vertex);
 			}
 		}	
