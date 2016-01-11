@@ -23,7 +23,7 @@ public class CoinChange {
 		{
 			for(int j = 1 ; j < temp.length ; j++)
 			{
-				if(j>=arr[i])
+				if(j>=arr[i]) // let's avoid the part where you expect 2$ if you have 5$
 				{
 					temp[j] = Math.min(temp[j], 1+temp[j-arr[i]]);
 				}
